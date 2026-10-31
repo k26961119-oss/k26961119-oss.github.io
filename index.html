@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Research Sync</title>
+  <style>
+    body {
+      font-family: Arial, "Microsoft JhengHei", sans-serif;
+      background: #f5f7fa;
+      color: #243047;
+      line-height: 1.8;
+      margin: 0;
+      padding: 24px;
+    }
+    main {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 32px;
+      background: white;
+      border-radius: 12px;
+    }
+    h1 { color: #174a82; }
+    h2 { margin-top: 28px; }
+    a { color: #1769aa; }
+    footer {
+      margin-top: 36px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Finance Research Sync</h1>
+    <p>個人金融研究資料整理與 Google Drive 同步工具。</p>
+
+    <h2>應用程式介紹</h2>
+    <p>
+      Finance Research Sync 是供管理者本人使用的
+      Windows 桌面工具，用於整理公開財經節目資料、
+      在本機產生逐字稿，並將成果同步至使用者自己的
+      Google Drive。
+    </p>
+
+    <h2>主要功能</h2>
+    <ul>
+      <li>處理使用者有權使用的公開節目音訊。</li>
+      <li>使用本機 GPU 產生 TXT、SRT、JSON 逐字稿。</li>
+      <li>透過 Google OAuth 2.0 授權 Google Drive。</li>
+      <li>將逐字稿與驗證紀錄同步至指定資料夾。</li>
+      <li>驗證上傳檔案的完整性。</li>
+    </ul>
+
+    <h2>Google Drive 權限用途</h2>
+    <p>
+      本工具使用 Google Drive OAuth 權限，
+      以執行研究資料的上傳、讀取、檔案檢查與同步。
+      OAuth 授權由使用者自行完成。
+      程式目前請求完整 Drive 存取範圍，
+      但同步操作以使用者設定的研究資料夾為目標。
+    </p>
+
+    <h2>隱私與聯絡方式</h2>
+    <p>
+      <a href="privacy.html">查看隱私權政策</a>
+    </p>
+    <p>
+      問題或聯絡：
+      <a href="https://github.com/k26961119-oss/k26961119-oss.github.io/issues">
+        GitHub Issues
+      </a>
+    </p>
+
+    <footer>
+      本網站僅提供應用程式資訊，
+      不公開研究逐字稿、Google OAuth Token 或憑證。
+    </footer>
+  </main>
+</body>
+</html>
