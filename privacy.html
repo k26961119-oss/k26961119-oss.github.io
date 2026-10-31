@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隱私權政策 | Finance Research Sync</title>
+  <style>
+    body {
+      font-family: Arial, "Microsoft JhengHei", sans-serif;
+      background: #f5f7fa;
+      color: #243047;
+      line-height: 1.8;
+      margin: 0;
+      padding: 24px;
+    }
+    main {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 32px;
+      background: white;
+      border-radius: 12px;
+    }
+    h1 { color: #174a82; }
+    h2 { margin-top: 28px; }
+    a { color: #1769aa; }
+    footer { margin-top: 36px; color: #666; font-size: 14px; }
+  </style>
+</head>
+<body>
+<main>
+  <p><a href="index.html">返回首頁</a></p>
+  <h1>Finance Research Sync 隱私權政策</h1>
+  <p>最後更新：2026 年 10 月 31 日</p>
+
+  <h2>1. 應用程式用途</h2>
+  <p>
+    Finance Research Sync 是供管理者個人使用的
+    Windows 桌面研究工具，用於處理使用者有權使用的
+    公開財經節目內容、在本機產生逐字稿，以及將
+    成果同步至使用者授權的 Google Drive。
+  </p>
+
+  <h2>2. Google 使用者資料存取</h2>
+  <p>
+    本工具在使用者透過 Google OAuth 2.0 明確授權後，
+    使用 Google Drive API 存取必要的雲端檔案。
+  </p>
+  <p>
+    目前請求的 OAuth 權限為：
+    <code>https://www.googleapis.com/auth/drive</code>
+  </p>
+  <p>
+    此權限可讓應用程式查看及管理使用者 Google Drive
+    中的檔案，授權範圍不限於單一資料夾。
+    本工具目前的同步操作則以使用者設定的研究資料夾
+    為目標，不主動刪除其他雲端檔案。
+  </p>
+
+  <h2>3. 資料使用方式</h2>
+  <p>本工具可能在執行同步時處理以下資料：</p>
+  <ul>
+    <li>Google Drive 資料夾及檔案名稱、ID 和中繼資料。</li>
+    <li>使用者指定同步的 TXT、SRT、JSON 與 manifest 檔案。</li>
+    <li>用於核對完整性的檔案大小及 SHA-256 雜湊。</li>
+    <li>OAuth 授權資訊及同步執行狀態。</li>
+  </ul>
+  <p>
+    以上資料僅用於使用者授權的檔案同步、
+    讀回驗證、錯誤處理及同步紀錄。
+  </p>
+
+  <h2>4. 資料儲存</h2>
+  <p>
+    逐字稿由使用者電腦上的本機轉錄程式產生。
+    使用者啟用同步功能後，成果會上傳至其授權的
+    Google Drive。
+  </p>
+  <p>
+    Google OAuth Token 與同步設定儲存在使用者
+    電腦的本機專案設定目錄中。
+    本網站不要求使用者上傳 Token、密碼或 Client Secret。
+  </p>
+  <p>
+    本工具目前沒有供開發者集中儲存使用者
+    Google Drive 檔案的獨立雲端伺服器。
+  </p>
+
+  <h2>5. 資料分享與使用限制</h2>
+  <p>
+    本工具不出售 Google 使用者資料，不將其用於廣告、
+    個人化行銷、信用評分或訓練通用 AI 模型。
+  </p>
+  <p>
+    資料僅在提供使用者要求的功能時，
+    依照其授權與相關服務互動，例如將指定成果
+    傳送至使用者自己的 Google Drive。
+  </p>
+  <p>
+    本工具對 Google API 資料的處理遵循
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">
+      Google API Services User Data Policy
+    </a>，包括適用的 Limited Use 要求。
+  </p>
+
+  <h2>6. 資料保留與刪除</h2>
+  <p>
+    本機逐字稿、同步紀錄及設定資料，
+    會保留在使用者自己的電腦上，直到使用者自行管理或刪除。
+    Google Drive 中的同步檔案由使用者透過其帳號管理。
+  </p>
+  <p>
+    使用者可以隨時在
+    <a href="https://myaccount.google.com/connections">
+      Google 帳號的第三方應用程式連線設定
+    </a>
+    中撤銷授權，並自行刪除本機資料與雲端成果。
+    撤銷授權不會自動刪除已同步的檔案。
+  </p>
+
+  <h2>7. 本網站與第三方服務</h2>
+  <p>
+    本網站由 GitHub Pages 託管，只提供應用程式資訊，
+    不設置登入表單，也不使用自建廣告或分析追蹤工具。
+    GitHub 及 Google 可能依各自的政策處理服務存取資料。
+  </p>
+
+  <h2>8. 政策更新</h2>
+  <p>
+    如果本工具的資料存取或使用方式有重大變更，
+    將更新本政策；必要時重新取得使用者授權。
+  </p>
+
+  <h2>9. 聯絡方式</h2>
+  <p>
+    如有隱私或資料處理相關問題，可透過
+    <a href="https://github.com/k26961119-oss/k26961119-oss.github.io/issues">
+      GitHub Issues
+    </a>
+    聯絡維護者。請勿在公開 Issue 中提供密碼、
+    Token、憑證或私人逐字稿。
+  </p>
+
+  <footer>
+    Finance Research Sync — Personal research and Google Drive synchronization.
+  </footer>
+</main>
+</body>
+</html>
